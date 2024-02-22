@@ -6,6 +6,8 @@ This is a very basic test suite that uses the official test cases for parser fro
 
 To run this test suite first enter `pip install antlr4-tools` in the terminal to install the required files to run the ANTLR files.
 
+Move the test_suite folder to the same directory as your ANTLR files.
+
 Then just run `python3 test.py` from inside test_suite.
 
 ## Output
