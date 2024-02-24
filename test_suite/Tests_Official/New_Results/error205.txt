@@ -1,0 +1,2 @@
+line 4:4 mismatched input 'boolean' expecting {';', ','}
+line 6:4 mismatched input 'relax' expecting {';', ','}

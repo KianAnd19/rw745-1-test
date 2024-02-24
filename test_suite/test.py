@@ -1,5 +1,6 @@
 import subprocess
 from pathlib import Path
+import sys
 
 # ANSI escape codes
 RED_BACKGROUND = '\033[41m'
@@ -8,6 +9,13 @@ RED = '\033[91m'
 GREEN = '\033[92m'
 WHITE_TEXT = '\033[97m'  # White text color
 RESET = '\033[0m'  # Resets the color to default
+
+file_path_results = "Tests_Official/New_Results/"
+
+if (len(sys.argv) > 1):
+    if (sys.argv[1] == "-o"):
+        file_path_results = "Tests_Official/Results/"
+
 
 folder_path = Path('Tests_Official/TestCases/')
 files = [item for item in folder_path.iterdir() if item.is_file()]
@@ -19,9 +27,9 @@ def run_test(filename):
         result = subprocess.run(['antlr4-parse', '../alan.g4', 'source'], stdin=input_file, capture_output=True, text=True)
 
     if result.returncode == 0:
-        with open(f"Tests_Official/Results/{filename.split('.')[0]}.txt", 'r') as result_file:
+        with open(f"{file_path_results}{filename.split('.')[0]}.txt", 'r') as result_file:
             expected_output = result_file.read()
-            if result.stdout == expected_output:
+            if result.stderr == expected_output:
                 results[filename] = "PASSED"
                 print(GREEN + "Test passed" + RESET)
             else:
