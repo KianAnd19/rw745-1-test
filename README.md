@@ -16,5 +16,5 @@ The program should output either PASSED or FAILED for each test case, if FAILED 
 
 The program also displays the final results at the end in a table.
 
-![Example Image](images/example1.PNG)
-![Example Image](images/example2.PNG)
+![Example Image](images/example1.png)
+![Example Image](images/example2.png)
