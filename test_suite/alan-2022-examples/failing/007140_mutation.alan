@@ -1,0 +1,1 @@
+source J begin put "6\n" . begin relax end end

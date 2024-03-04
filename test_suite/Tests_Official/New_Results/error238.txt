@@ -1,1 +1,0 @@
-line 6:4 mismatched input 'begin' expecting {'end', 'and', 'or', 'rem', ';', '+', '-', '*', '/', '=', '<>', '>=', '>', '<=', '<'}

@@ -1,4 +1,0 @@
-source test213
-begin
-    put "Hello, world!\n"
-end

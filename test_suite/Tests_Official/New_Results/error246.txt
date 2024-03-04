@@ -1,2 +1,0 @@
-line 15:21 mismatched input ';' expecting {'not', 'true', 'false', '(', '-', ID, NUM, STRING}
-line 16:20 extraneous input '"\n"' expecting 'end'

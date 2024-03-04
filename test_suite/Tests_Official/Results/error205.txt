@@ -1,1 +1,0 @@
-alanc: error205.alan:4:5: error: expected ';', but found 'boolean'

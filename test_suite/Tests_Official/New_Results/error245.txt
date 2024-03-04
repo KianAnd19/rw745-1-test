@@ -1,2 +1,0 @@
-line 11:12 extraneous input 'put' expecting {'not', 'true', 'false', '(', '-', ID, NUM, STRING}
-line 16:20 extraneous input '"\n"' expecting 'end'

@@ -17,34 +17,54 @@ if (len(sys.argv) > 1):
         file_path_results = "Tests_Official/Results/"
 
 
-folder_path = Path('Tests_Official/TestCases/')
-files = [item for item in folder_path.iterdir() if item.is_file()]
-files.sort()
+folder_path = Path('alan-2022-examples/passing/')
+files_passing = [item for item in folder_path.iterdir() if item.is_file()]
+files_passing.sort()
+
+folder_path = Path('alan-2022-examples/failing/')
+files_failing = [item for item in folder_path.iterdir() if item.is_file()]
+files_failing.sort()
 results = {}
 
-def run_test(filename):
-    with open(f'Tests_Official/TestCases/{filename}', 'rb') as input_file:
+def run_passing(filename):
+    with open(f'alan-2022-examples/passing/{filename}', 'rb') as input_file:
         result = subprocess.run(['antlr4-parse', '../alan.g4', 'source'], stdin=input_file, capture_output=True, text=True)
 
     if result.returncode == 0:
-        with open(f"{file_path_results}{filename.split('.')[0]}.txt", 'r') as result_file:
-            expected_output = result_file.read()
-            if result.stderr == expected_output:
-                results[filename] = "PASSED"
-                print(GREEN + "Test passed" + RESET)
-            else:
-                results[filename] = "FAILED"
-                print(RED + "Test failed")
-                print("Expected output:\n", expected_output)
-                print("Actual output:\n", result.stderr, RESET)
+        if result.stderr == "":
+            results[filename] = "PASSED"
+            print(GREEN + "Test passed" + RESET)
+        else:
+            results[filename] = "FAILED"
+            print(RED + "Test failed")
+            print("Actual output:\n", result.stderr, RESET)
     else:
         print("Command failed with return code:", result.returncode)
-        print("Error output:\n", result.stderr)
+
+def run_failing(filename):
+    with open(f'alan-2022-examples/failing/{filename}', 'rb') as input_file:
+        result = subprocess.run(['antlr4-parse', '../alan.g4', 'source'], stdin=input_file, capture_output=True, text=True)
+
+    if result.returncode == 0:
+        if result.stderr != "":
+            results[filename] = "PASSED"
+            print(GREEN + "Test passed" + RESET)
+        else:
+            results[filename] = "FAILED"
+            print(RED + "Test failed")
+            print("Actual output:\n", result.stderr, RESET)
+    else:
+        print("Command failed with return code:", result.returncode)
 
 # Prints each file being tested
-for file in files:
+for file in files_passing:
     print(file.name + " is being tested...")
-    run_test(file.name)
+    run_passing(file.name)
+    print("--------------------------------")
+
+for file in files_failing:
+    print(file.name + " is being tested...")
+    run_failing(file.name)
     print("--------------------------------")
 
 # Print the results

@@ -1,8 +1,0 @@
-source test220
-	function dummy()
-	begin
-		relax
-	end
-begin
-	call dummy()
-end

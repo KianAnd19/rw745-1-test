@@ -1,1 +1,0 @@
-alanc: error230.alan:4:1: error: expected ')', but found 'end'

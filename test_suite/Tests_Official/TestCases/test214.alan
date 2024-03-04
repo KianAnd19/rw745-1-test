@@ -1,8 +1,0 @@
-source test214
-begin
-    integer i;
-
-    put "Please enter an integer: ";
-    get i;
-    put "You entered " . i
-end
