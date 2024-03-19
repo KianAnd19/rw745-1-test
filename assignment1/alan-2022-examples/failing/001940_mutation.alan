@@ -1,1 +1,0 @@
-source M begin function w() begin relax end put "8" end

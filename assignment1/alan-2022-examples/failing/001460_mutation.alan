@@ -1,1 +1,0 @@
-source M begin call rm0p(1, call o()) end
