@@ -12,7 +12,7 @@ Move the test_suite folder to the same directory as your ANTLR files.
 
 Then just run `python3 test.py` from inside test_suite.
 
-Additionally, you can run `python3 test.py 'program'` to set the starting rule of your grammar if it isnt the default 'program'.
+Additionally, you can run `python3 test.py 'starting_rule'` to set the starting rule of your grammar, by default it is set to `program`.
 
 ## Output
 
