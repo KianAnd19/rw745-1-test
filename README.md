@@ -1,14 +1,18 @@
 # Compilers Assignment 1 Test Suite
 
+## :exclamation: :warning: !!BEWARE!! :warning: :exclamation:
+**The test suite uses a different command to run the antlr files than the one prof uses. Make sure your code works as expected with prof's command before using this test suite. In particular the sematics predicates.**
+
+
 ## Installation
 
-This is a very basic test suite that uses the official test cases for parser from CS244.
-
-To run this test suite first enter `pip install antlr4-tools` in the terminal to install the required files to run the ANTLR files.
+This is a very basic test suite to test the output of your ANTLR files.
 
 Move the test_suite folder to the same directory as your ANTLR files.
 
 Then just run `python3 test.py` from inside test_suite.
+
+Additionally, you can run `python3 test.py 'program'` to set the starting rule of your grammar if it isnt the default 'program'.
 
 ## Output
 
