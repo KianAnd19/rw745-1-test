@@ -1,5 +1,7 @@
 # Draco Rules:
 
+*This is just a summary of the draco docs, it does not contain all the rules and is not a replacement for the docs.*
+
 ## Declarations
 
 - **Signed:** `signed 100 temp;`
