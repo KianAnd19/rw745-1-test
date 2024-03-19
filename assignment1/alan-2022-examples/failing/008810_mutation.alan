@@ -1,1 +1,0 @@
-source B function F(boolean x, boolean relax) begin relax end begin relax end
