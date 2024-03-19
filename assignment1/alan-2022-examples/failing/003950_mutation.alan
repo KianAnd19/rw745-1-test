@@ -1,0 +1,1 @@
+source B begin leave(elsif 2) end
