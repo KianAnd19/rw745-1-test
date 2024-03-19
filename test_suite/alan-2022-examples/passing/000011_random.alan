@@ -1,1 +1,0 @@
-source w begin put ""; while 986 do put "[3\t" end end
