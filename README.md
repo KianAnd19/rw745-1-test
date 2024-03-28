@@ -1,4 +1,4 @@
-# Compilers Assignment 1 Test Suite
+# Compilers Assignments Test Suite
 
 ## :exclamation: :warning: !!BEWARE!! :warning: :exclamation:
 **The test suite uses a different command to run the antlr files than the one prof uses. Make sure your code works as expected with prof's command before using this test suite. In particular the sematic predicates i.e the code in `{}`.**
