@@ -2,6 +2,8 @@
 
 :warning: **This test suite is for the type checking part of the assignment only and only checks whether a testcase passes or fails, no idea if this is how it is marked.**:warning:
 
+**The test suite also assumes your driver programs is set up correctly**
+
 ## Usage
 
 First make sure all your files are compiled.
