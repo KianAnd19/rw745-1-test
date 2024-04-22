@@ -44,6 +44,7 @@ def run_passing(filename):
         else:
             results[filename] = "FAILED"
     else:
+        results[filename] = "FAILED"
         print("Command failed with return code:", result.returncode)
 
 # Prints each file being tested
