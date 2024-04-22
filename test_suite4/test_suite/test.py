@@ -26,7 +26,7 @@ result = subprocess.run(['javac', 'alanpp.java'], capture_output=True, text=True
 results = {}
 def run_passing(filename):
     with open(f'test_suite/test_cases/{filename}', 'rb') as input_file:
-        result = subprocess.run(['java', 'alanpp', input_file.name, str(40)], capture_output=True, text=True)
+        result = subprocess.run(['java', 'alanpp', input_file.name, str(30)], capture_output=True, text=True)
         temp = result.stdout
         with open(f'test_suite/test_cases/temp.alan', 'w') as input_file:
             input_file.write(result.stdout)
