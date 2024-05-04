@@ -1,0 +1,2 @@
+proc main() void : if a then a := 1; fi; corp;
+

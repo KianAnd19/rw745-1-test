@@ -1,0 +1,2 @@
+proc main() void : open(ch, f, "f.txt"); corp;
+

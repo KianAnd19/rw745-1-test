@@ -1,0 +1,2 @@
+proc main() void : a := pretend(a, int); corp;
+

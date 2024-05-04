@@ -1,0 +1,5 @@
+channel input text ch;
+
+proc main()void: a := 1; corp;
+
+

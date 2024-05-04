@@ -1,0 +1,6 @@
+proc main() void : 
+
+  a := case a1 incase a3 : a4:=0; a4 default : a7:=0; a7 esac;
+
+corp;
+

@@ -1,0 +1,2 @@
+proc main(register int a) void : a := 1; corp;
+

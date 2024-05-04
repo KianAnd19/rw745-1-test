@@ -1,0 +1,2 @@
+proc main() void : while a := 0; a do a := 3; od; corp;
+

@@ -1,0 +1,2 @@
+proc main() void : a := 0b110; a := 0B111; corp;
+

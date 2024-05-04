@@ -1,0 +1,11 @@
+proc main() void :
+
+  a := a1 and a2 or not a3;
+  a := a1 and a2 >= a3 or not a4;
+  a := - a1 + a2 - a3 * a4 / a5 % a6;
+  a := a1-|+-a2+a3;
+  a := a1 & ~a2 >< a3 | a4 << ~ a5 >> a6;
+  a := a1 * a2 < a3 > a4 ~= a5;
+
+corp;
+

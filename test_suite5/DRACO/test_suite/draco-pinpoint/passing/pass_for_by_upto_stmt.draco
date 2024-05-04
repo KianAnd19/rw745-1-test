@@ -1,0 +1,2 @@
+proc main() void : for a from 1 by 1 upto 3 do a := 3; od; corp;
+

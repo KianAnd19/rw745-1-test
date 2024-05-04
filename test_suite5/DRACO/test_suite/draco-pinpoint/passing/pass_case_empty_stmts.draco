@@ -1,0 +1,7 @@
+proc main() void : 
+    case ch
+    incase 1:
+    default:
+    esac;
+corp;
+

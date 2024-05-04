@@ -1,0 +1,2 @@
+proc main() void : type loc = *int; a := 0; corp;
+

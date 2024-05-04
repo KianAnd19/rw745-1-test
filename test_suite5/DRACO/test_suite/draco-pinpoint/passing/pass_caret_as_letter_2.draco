@@ -1,0 +1,5 @@
+proc a^a() void : a^a := a^a; corp;
+
+proc main() void : a := 1; corp;
+
+

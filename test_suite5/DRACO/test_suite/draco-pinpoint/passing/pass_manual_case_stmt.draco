@@ -1,0 +1,14 @@
+proc main() void : 
+    case ch
+    incase 'a':
+    incase 'A':
+        writeln("It was an A.");
+    incase 'b' .. 'd':
+    incase 'B' .. 'D':
+        x := y;
+        y := z;
+    default:
+        flag := true;
+    esac;
+corp;
+

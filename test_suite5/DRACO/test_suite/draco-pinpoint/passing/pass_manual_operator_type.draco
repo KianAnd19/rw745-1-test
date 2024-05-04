@@ -1,0 +1,5 @@
+type Complex_t = ("_cmplx", struct {int c_real, c_imag;},
+                  OPADD | OPSUB | OPMUL | OPDIV | OPNEG |
+                  OPABS | OPCPR | OPPUT | OPGET);
+Complex_t I = (0, 1);
+

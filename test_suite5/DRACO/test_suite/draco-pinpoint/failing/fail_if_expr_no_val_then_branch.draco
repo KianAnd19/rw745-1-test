@@ -1,0 +1,6 @@
+proc main() void : 
+
+  a := if a1 then a2:=0; elif a3 then a4 else a7 fi;
+
+corp;
+

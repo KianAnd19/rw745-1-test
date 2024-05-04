@@ -1,0 +1,8 @@
+proc main() void : 
+
+  a := "This is a really weird"
+       "way of layouting"
+/*more to come */       "long strings"; 
+
+corp;
+

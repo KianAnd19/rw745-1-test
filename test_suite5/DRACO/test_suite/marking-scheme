@@ -1,0 +1,471 @@
+Allows core keywords as identifier [-2]
+%% -0.5 per failure, max -2
+%% applied to syntactical elements (stmt, type) / infix notation
+  fail_and_as_identifier.draco
+  fail_by_as_identifier.draco
+  fail_case_as_identifier.draco
+  fail_corp_as_identifier.draco
+  fail_default_as_identifier.draco
+  fail_do_as_identifier.draco
+  fail_downto_as_identifier.draco
+  fail_elif_as_identifier.draco
+  fail_else_as_identifier.draco
+  fail_enum_as_identifier.draco
+  fail_esac_as_identifier.draco
+  fail_extern_as_identifier.draco
+  fail_fi_as_identifier.draco
+  fail_for_as_identifier.draco
+  fail_from_as_identifier.draco
+  fail_if_as_identifier.draco
+  fail_ignore_as_identifier.draco
+  fail_incase_as_identifier.draco
+  fail_make_as_identifier.draco
+  fail_new_as_identifier.draco
+  fail_nonrec_as_identifier.draco
+  fail_not_as_identifier.draco
+  fail_od_as_identifier.draco
+  fail_or_as_identifier.draco
+  fail_pretend_as_identifier.draco
+  fail_proc_as_identifier.draco
+  fail_range_as_identifier.draco
+  fail_register_as_identifier.draco
+  fail_signed_as_identifier.draco
+  fail_sizeof_as_identifier.draco
+  fail_struct_as_identifier.draco
+  fail_then_as_identifier.draco
+  fail_type_as_identifier.draco
+  fail_union_as_identifier.draco
+  fail_unsigned_as_identifier.draco
+  fail_upto_as_identifier.draco
+  fail_void_as_identifier.draco
+  fail_while_as_identifier.draco
+
+Allows predefined function names as identifier [-1]
+%% -0.5 per failure, max -1
+%% constructs that are applied only to values, could be defined in a hyperscope
+  fail_dim_as_identifier.draco
+  fail_error_as_identifier.draco
+  fail_false_as_identifier.draco
+  fail_free_as_identifier.draco
+  fail_nil_as_identifier.draco
+  fail_true_as_identifier.draco
+
+Allows I/O keywords as identifier [-1]
+%% -0.5 per failure, max -1
+%% keywords from drio.ref
+  fail_binary_as_identifier.draco
+  fail_channel_as_identifier.draco
+  fail_close_as_identifier.draco
+  fail_file_as_identifier.draco
+  fail_ioerror_as_identifier.draco
+  fail_input_as_identifier.draco
+  fail_open_as_identifier.draco
+  fail_output_as_identifier.draco
+  fail_read_as_identifier.draco
+  fail_readln_as_identifier.draco
+  fail_text_as_identifier.draco
+  fail_write_as_identifier.draco
+  fail_writeln_as_identifier.draco
+
+Id structure incorrect [-1]
+  pass_underscore_as_letter_1.draco
+  pass_underscore_as_letter_2.draco
+
+Does not fully support numeric constants [-2]
+%% -0.5 per failure, max -2
+  fail_bin_const_wrong_digit.draco
+  fail_hex_const_no_prefix.draco
+  fail_hex_const_wrong_letter.draco
+  fail_oct_const_wrong_digit.draco
+  pass_bin_const.draco
+  pass_hex_const.draco
+  pass_int_const.draco
+  pass_int_const_leading_zero.draco
+  pass_oct_const.draco
+
+Does not fully support char and string constants [-1]
+%% -0.5 per failure, max -1
+  fail_char_const_too_long.draco
+  pass_char_const.draco
+  pass_string_break.draco
+  pass_string_const.draco
+  pass_string_quote.draco
+
+Does not fully support escape directives in chars and strings [-2]
+%% -0.5 per failure, max -2
+  pass_char_escape_1.draco
+  pass_char_escape_2.draco
+  pass_char_escape_complex.draco
+  pass_char_escape_hash.draco
+  pass_string_escape_1.draco
+  pass_string_escape_2.draco
+  pass_string_escape_complex.draco
+  pass_string_escape_hash.draco
+
+Does not fully support (nested) comment structure [-2]
+%% -1 for nesting, -1 for anything else
+  fail_comment_1.draco
+  fail_nested_comment_1.draco
+  fail_nested_comment_2.draco
+  pass_comment_1.draco
+  pass_comment_2.draco
+  pass_comment_3.draco
+  pass_comment_4.draco
+  pass_comment_5.draco
+  pass_nested_comment_1.draco
+  pass_nested_comment_2.draco
+
+Does not fully support character alternatives [-2.5]
+%% -0.5 per failure, max -2.5
+  pass_bar_alt_1.draco
+  pass_bar_alt_2.draco
+  pass_caret_as_letter_1.draco
+  pass_caret_as_letter_2.draco
+  pass_curly_bracket_alt.draco
+  pass_square_bracket_alt_1.draco
+  pass_square_bracket_alt_2.draco
+  pass_tilde_alt_1.draco
+  pass_tilde_alt_2.draco
+
+Does not fully support include directives - structural issues [-2]
+%% -0.5 per failure, max -2
+  fail_include_in_decl_file.draco
+  pass_include.draco
+  pass_include_hash.draco
+  pass_includes.draco
+
+Does not fully support include directives - lexical issues [-1]
+%% -0.5 per failure, max -1
+  fail_include_not_at_first_line.draco
+  fail_include_not_at_start.draco
+  fail_include_with_intervening_comments.draco
+
+Signed / unsigned type declarations not fully supported [-2]
+%% -0.5 per failure, max -2
+  pass_signed_type.draco
+  pass_signed_type_expr.draco
+  pass_unsigned_type.draco
+  pass_unsigned_type_expr.draco
+
+Predefined type declarations not fully supported [-1.5]
+%% -0.5 per failure, max -1.5
+  pass_bool_type.draco
+  pass_char_type.draco
+  pass_int_type.draco
+  pass_ushort_type.draco
+  pass_word_type.draco
+
+Array types not fully supported [-1.5]
+%% -0.5 per failure, max -1
+  fail_empty_array_type.draco
+  pass_array_type.draco
+  pass_manual_array_declarations.draco
+
+Const / extern / type declarations not fully supported [-5]
+%% -1 per failure, max -5
+  pass_const_decls.draco
+  fail_mixed_const_var_decls.draco
+  pass_extern_func.draco
+  pass_extern_proc.draco
+  pass_type_decl.draco
+  pass_type_decls.draco
+  pass_manual_declarations.draco
+  pass_include_file_no_procedure.draco
+
+Complex procedure headings not fully supported [-2]
+  pass_manual_proctype_declarations.draco
+
+Open array parameters not fully supported [-1]
+%% -0.5 per failure, max -1
+  fail_procedure_nested_open_array.draco
+  fail_procedure_return_open_array.draco
+  pass_procedure_open_array.draco
+  pass_procedure_open_array_2.draco
+
+Enum types not fully supported [-1]
+%% -0.5 per failure, max -1
+  fail_empty_enum_type.draco
+  pass_enum_type.draco
+
+Struct types not fully supported [-1.5]
+%% -0.5 per failure, max -1.5
+  fail_empty_struct_type.draco
+  pass_manual_struct_type_decls.draco
+  pass_singleton_struct_type.draco
+  pass_field_selection.draco
+
+Union types not fully supported [-1]
+%% -0.5 per failure, max -1
+  fail_empty_union_type.draco
+  pass_manual_union_type_decls.draco
+  pass_singleton_union_type.draco
+
+Pointer types not fully supported [-1]
+%% -0.5 per failure, max -1
+  pass_pointer_type.draco
+  pass_double_pointer_type.draco
+
+Procedure types require parameter names [-1]
+  fail_missing_param_names_proctype.draco
+
+Operator types not fully supported [-1]
+%% -0.5 per failure, max -1
+  pass_op_type_decl.draco
+  pass_manual_operator_type.draco
+
+Channel / file types not fully supported [-1.5]
+%% -0.5 per failure, max -1.5
+  pass_channel_input_binary.draco
+  pass_channel_input_text.draco
+  pass_channel_output_binary.draco
+  pass_channel_output_text.draco
+  pass_file_type.draco
+  pass_file_type_no_buffer.draco
+  fail_channel_wrong_order.draco
+
+Does not support all arithmetic / relational operators [-3]
+%% -0.5 per failure, max -3
+  pass_absval_op.draco
+  pass_ampersand_op.draco
+  fail_ampersand_op_on_expr.draco
+  pass_bit_and_op.draco
+  pass_bit_comp_op.draco
+  pass_bit_left_shift_op.draco
+  pass_bit_or_op.draco
+  pass_bit_right_shift_op.draco
+  pass_bit_xor_op.draco
+  pass_div_op.draco
+  pass_equals_op.draco
+  pass_greater_eq_op.draco
+  pass_greater_op.draco
+  pass_minus_op.draco
+  pass_mult_op.draco
+  pass_not_equals_op.draco
+  pass_plus_op.draco
+  pass_prefix_minus_op.draco
+  pass_prefix_plus_op.draco
+  pass_rem_op.draco
+  pass_smaller_eq_op.draco
+  pass_smaller_op.draco
+
+Does not support all bolean operators [-1.5]
+%% -0.5 per failure, max -1.5
+  pass_and_op.draco
+  pass_or_op.draco
+  pass_not_op.draco
+
+Function call expressions incomplete [-1]
+%% -0.5 per failure, max -1
+  pass_function_call_no_args.draco
+  pass_function_call_one_arg.draco
+  pass_function_call_two_args.draco
+
+Array indexing not fully supported [-2]
+%% -0.5 per failure, max -2
+  fail_array_indexing_empty.draco
+  pass_array_double_indexing.draco
+  pass_array_indexing.draco
+  pass_array_indexing_2d.draco
+
+Dereferencing not fully supported [-2]
+%% -0.5 per failure, max -2
+  pass_dereferencing.draco
+  pass_double_dereferencing.draco
+
+If-expressions not fully supported [-2]
+%% -0.5 per failure, max -2
+  fail_if_expr_no_else.draco
+  fail_if_expr_no_val_elif_branch.draco
+  fail_if_expr_no_val_else_branch.draco
+  fail_if_expr_no_val_then_branch.draco
+  pass_if_expr.draco
+  pass_if_expr_with_stmts.draco
+
+Case-expressions not fully supported [-1]
+%% -0.5 per failure, max -1
+  fail_case_expr_no_default.draco
+  pass_case_expr_with_stmts.draco
+
+Complex expressions not fully supported [-1]
+  pass_complex_expr.draco
+
+I/O statements should be allowed as expressions [-1]
+%% -0.5 per failure, max -1
+  pass_read_expr.draco
+  pass_readln_expr.draco
+  pass_write_expr.draco
+  pass_writeln_expr.draco
+  pass_open_channel_expr.draco
+  pass_close_expr.draco
+
+Assignment statement doesn't allow complex lvalues [-2]
+%% -0.5 per failure
+  pass_assign_stmt.draco
+  pass_assign_to_array.draco
+  pass_assign_to_field.draco
+  pass_assign_to_pointer.draco
+  pass_funccall_as_lval_arg.draco
+
+Allows rvalues in lvalue positions [-2]
+%% -0.5 per failure
+  fail_assign_to_address.draco
+  fail_assign_to_expr.draco
+  fail_assign_to_funccall.draco
+  fail_rval_read_stmt.draco
+
+New-expressions not fully supported [-0.5]
+%% -0.5 per failure, max -0.5
+  fail_new_expr_as_stmt.draco
+  fail_new_expr_non_type_arg.draco
+  pass_new_expr.draco
+
+Range / sizeof expressions incorrect [-1]
+%% -0.5 per failure, max -1
+  fail_range_expr_non_type_arg.draco
+  pass_range_expr.draco
+  fail_sizeof_expr_non_type_arg.draco
+  pass_sizeof_expr.draco
+
+Dim expression incorrect [-0.5]
+%% -0.5 per failure, max -0.5
+  fail_dim_expr_non_array_name.draco
+  pass_dim_expr.draco
+
+Ioerror expression incorrect [-0.5]
+%% -0.5 per failure, max -0.5
+  pass_ioerror_expr.draco
+  pass_ioerror_expr_no_args.draco
+
+While statement incorrect [-1.5]
+%% -0.5 per failure
+  pass_while_stmt.draco
+  pass_while_stmt2.draco
+  pass_while_stmt_empty_body.draco
+
+If statement incorrect [-3]
+%% -0.5 per failure
+  pass_if_elif_stmt.draco
+  pass_if_elif2_stmt.draco
+  pass_if_elif_else_stmt.draco
+  pass_if_else_stmt.draco
+  pass_if_empty_stmts.draco
+  pass_if_stmt.draco
+
+Case statement incorrect [-3]
+%% -0.5 per failure
+  fail_case_stmt_multiple_defaults.draco
+  pass_case_empty_stmts.draco
+  pass_case_stmt_default_middle.draco
+  pass_case_stmt_multi_branch.draco
+  pass_case_stmt_single_branch.draco
+  pass_manual_case_stmt.draco
+
+For statement incorrect [-2.5]
+%% -0.5 per failure, max -2.5
+  pass_for_by_downto_stmt.draco
+  pass_for_by_upto_stmt.draco
+  pass_for_downto_stmt.draco
+  pass_for_empty_body.draco
+  pass_for_upto_stmt.draco
+
+Procedure call statements incomplete [-1]
+%% -0.5 per failure, max -1
+  pass_procedure_call_no_args.draco
+  pass_procedure_call_one_arg.draco
+  pass_procedure_call_two_args.draco
+
+Pretend statement / make expression incorrect [-2]
+%% -0.5 per failure, max -2
+  fail_pretend_expr_to_void.draco
+  fail_pretend_stmt_non_void_type.draco
+  pass_pretend_expr.draco
+  pass_pretend_stmt.draco
+  fail_make_as_stmt.draco
+  fail_make_to_void.draco
+  pass_make_expr.draco
+
+Write / writeln / close statment incomplete [-1.5]
+%% -0.5 per failure, max -1.5
+  pass_close_stmt.draco
+  pass_write_stmt.draco
+  pass_manual_write_stmt.draco
+  pass_writeln_no_arguments.draco
+  pass_writeln_stmt.draco
+
+Read statment incomplete [-2]
+%% -0.5 per failure, max -2
+  pass_read_stmt.draco
+  pass_lval_read_stmt.draco
+  pass_readln_stmt.draco
+  pass_readln_arguments.draco
+  pass_readln_no_arguments.draco
+
+Read / write should require arguments [-1]
+%% -0.5 per failure, max -1
+  fail_read_channel_no_arguments.draco
+  fail_read_no_arguments.draco
+  fail_write_channel_no_arguments.draco
+  fail_write_no_arguments.draco
+
+Read / write to channels not fully supported [-1]
+%% -0.5 per failure, max -1
+  pass_write_channel.draco
+  pass_write_channel_star.draco
+  pass_readln_channel_no_arguments.draco
+  pass_writeln_channel_no_arguments.draco
+
+Formatted write not fully supported [-1]
+%% -0.5 per failure, max -1
+  pass_format_specifier_as_id.draco
+  fail_write_wrong_format_specifier.draco
+  pass_write_format_specifiers.draco
+  pass_write_length_specifier.draco
+  pass_writeln_channel_formatted_argument.draco
+
+Open statement doesn't support all variants [-1]
+%% -0.5 per failure, max -1
+  pass_open_channel_stmt.draco
+  pass_open_file_stmt.draco
+  pass_open_prodcons_function_stmt.draco
+
+Error statement incorrect [-0.5]
+%% -0.5 per failure, max -0.5
+  fail_error_stmt_non_string_arg.draco
+  pass_error_stmt.draco
+
+Free statement incorrect [-0.5]
+  pass_free_stmt.draco
+
+Ignore statement incorrect [-0.5]
+  pass_ignore_stmt.draco
+
+Empty statements not supported [-0.5]
+  pass_semicolon_as_statements.draco
+
+Register directive not supported [-0.5]
+%% -0.5 per failure, max -0.5
+  pass_register_parameter.draco
+  pass_register_type.draco
+
+Structure of function / procedure declarations incorrect [-3.5]
+%% -0.5 per failure
+  fail_function_no_return_value.draco
+  fail_procedure_return_value.draco
+  pass_procedure_empty_statements.draco
+  pass_procedure_local_const_decl.draco
+  pass_procedure_local_extern_decl.draco
+  pass_procedure_local_type_decl.draco
+  pass_procedure_local_var_decl.draco
+
+Complex operator structure wrong [-3]
+%% -1 per failure
+  pass_multiple_unary_ops.draco
+  pass_nested_postfix_ops.draco
+  pass_operator_precedences.draco
+
+Complex example from language manual fails 
+%% -1 per failure
+  pass_manual_hanoi.draco
+  pass_manual_minimum.draco
+
+

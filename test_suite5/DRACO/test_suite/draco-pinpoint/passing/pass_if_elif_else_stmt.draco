@@ -1,0 +1,2 @@
+proc main() void : if a then a := 1; elif b then a := 2; else a := 3; fi; corp;
+

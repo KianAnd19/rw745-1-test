@@ -1,0 +1,4 @@
+type tt = ("_tt", int, 127);
+
+proc main() void : a := 1; corp;
+

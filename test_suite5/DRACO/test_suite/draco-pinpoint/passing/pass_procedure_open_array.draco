@@ -1,0 +1,3 @@
+
+proc main([*] word a) void : a := 0; corp;
+

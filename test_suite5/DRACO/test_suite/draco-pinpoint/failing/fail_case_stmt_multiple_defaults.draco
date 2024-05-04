@@ -1,0 +1,13 @@
+proc main() void : 
+    case ch
+    incase 1:
+        y := z;
+    default:
+    	flag := false;
+    incase 0:
+        x := y;
+    default:
+        flag := true;
+    esac;
+corp;
+

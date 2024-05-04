@@ -1,0 +1,6 @@
+\test.g
+/* this is illegal because of the following include */
+\illegal.g
+
+proc main() void : a := 1; corp;
+

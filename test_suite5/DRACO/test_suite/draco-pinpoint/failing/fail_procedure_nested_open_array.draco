@@ -1,0 +1,3 @@
+
+proc main([*] [*] int ar) int : a := 0; corp;
+

@@ -1,0 +1,2 @@
+proc main() void : extern a() void; a := 0; corp;
+

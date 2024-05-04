@@ -1,0 +1,2 @@
+proc main() void : a := func(1); corp;
+

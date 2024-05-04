@@ -1,0 +1,5 @@
+extern a() void;
+
+proc main() void : a := a; corp;
+
+

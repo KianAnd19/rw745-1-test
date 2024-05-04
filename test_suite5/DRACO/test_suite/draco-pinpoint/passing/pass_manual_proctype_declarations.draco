@@ -1,0 +1,5 @@
+proc (int a, b)int a1;
+proc (proc (char c)void putChar; *char charsPtr)void a2;
+proc ([12]**int x, y)[12]**int a3;
+
+

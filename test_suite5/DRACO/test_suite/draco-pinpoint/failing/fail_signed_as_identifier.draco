@@ -1,0 +1,3 @@
+int signed;
+ 
+proc main() void : a := 1; corp;

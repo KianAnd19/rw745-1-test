@@ -1,0 +1,7 @@
+proc main() void : 
+    case ch
+    incase 2 .. 3:
+        y := z;
+    esac;
+corp;
+

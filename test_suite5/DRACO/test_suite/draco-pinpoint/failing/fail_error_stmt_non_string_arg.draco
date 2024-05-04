@@ -1,0 +1,4 @@
+string MSG;
+
+proc main() void : error(MSG); corp;
+

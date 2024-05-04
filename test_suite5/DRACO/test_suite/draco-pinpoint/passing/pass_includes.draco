@@ -1,0 +1,5 @@
+\test.g
+\test2.g
+
+proc main() void : a := 1; corp;
+

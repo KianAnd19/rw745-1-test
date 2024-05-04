@@ -1,0 +1,11 @@
+                type
+                    Track_t = union {
+                        int tr_straight;        /* straight track option */
+                        struct {                /* turnout option */
+                            int trn_length;
+                            bool trn_open;
+                            bool trn_isRight;
+                        } tr_turnout;
+                    };
+
+

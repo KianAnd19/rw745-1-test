@@ -1,0 +1,4 @@
+proc main() void :
+  write(i, n : u, ' ', w:x:-4, i:j); 
+corp;
+

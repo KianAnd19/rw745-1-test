@@ -1,0 +1,10 @@
+        proc hanoi(int n; *char from, to, using)void:
+
+            if n > 0 then
+                hanoi(n - 1, from, using, to);
+                writeln("Move disk ", n, " from peg ", from, " to peg ", to);
+                hanoi(n - 1, using, to, from);
+            fi;
+        corp;
+
+

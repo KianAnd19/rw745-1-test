@@ -1,0 +1,20 @@
+                type
+                    ProcessState_t = struct {
+                        word st_programCounter, st_stackPointer;
+                        [8] word st_registers;
+                        byte st_statusRegister;
+                    },
+
+                    Process_t = struct {
+                        int pr_priority;
+                        *Process_t pr_parent, pr_children, pr_nextSibling;
+                        ProcessState_t pr_state;
+                        *ProcessQueue_t pr_waitQueue;
+                    },
+
+                    ProcessQueue_t = struct {
+                        *ProcessQueue_t pq_next;
+                        *Process_t pq_this;
+                    };
+
+

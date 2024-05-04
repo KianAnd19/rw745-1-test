@@ -1,0 +1,1 @@
+proc main() void :  write(a:b:5, a:i:5, a:o:5, a:u:5, a:x:5); corp;

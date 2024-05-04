@@ -1,0 +1,3 @@
+int default;
+ 
+proc main() void : a := 1; corp;

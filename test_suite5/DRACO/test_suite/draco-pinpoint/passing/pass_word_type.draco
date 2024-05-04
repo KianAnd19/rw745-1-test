@@ -1,0 +1,3 @@
+word a;
+
+proc main() void : a := 0; corp;

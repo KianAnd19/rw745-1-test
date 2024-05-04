@@ -1,0 +1,4 @@
+[MAX_NAME_LENGTH + 1] char a1;
+[M, N, P] int a2;
+[BLOCK_COUNT] [BLOCK_LEN] unsigned 32 a3;
+

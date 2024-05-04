@@ -1,0 +1,3 @@
+int downto;
+ 
+proc main() void : a := 1; corp;

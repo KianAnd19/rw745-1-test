@@ -1,0 +1,4 @@
+type ty = bool, tyty = word;
+
+proc main() void : a := 1; corp;
+

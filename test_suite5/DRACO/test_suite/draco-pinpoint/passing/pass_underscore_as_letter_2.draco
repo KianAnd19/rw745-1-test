@@ -1,0 +1,4 @@
+proc a_a() void : a_a := a_a; corp;
+
+proc main() void : a := 0; corp;
+

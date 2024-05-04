@@ -1,0 +1,13 @@
+        proc minimum([*] int a)int:
+            int i, min;
+
+            min := a[0];
+            for i from 1 upto dim(a, 1) - 1 do
+                if a[i] < min then
+                    min := a[i];
+                fi;
+            od;
+            min
+        corp;
+
+

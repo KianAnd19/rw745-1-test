@@ -1,0 +1,7 @@
+word MAX_LENGTH = 1000,
+     ENTRY_COUNT = 10;
+char BEL = '\(7)', BS = '\b', LETTER_F = 'f';
+*char AUTHOR = "Sam Spade";
+unsigned 255 LIMIT = 255 - 1;
+
+
