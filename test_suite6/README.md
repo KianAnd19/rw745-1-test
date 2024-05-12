@@ -7,4 +7,4 @@ This just tests whether your output can be run again through the parser and whet
 Place the test_suitem folder in the same directory as your ANTLR files. Then run:
 `python3 test_suite/test.py'
 
-Your main must be named `Alan.java`, all your files should be compiled also. `Alan.java` should take in a file name as a parameter and parse and replace the code with labels and gotos and print out the result.
+Your main must be named `Main.java`, all your files should be compiled also. `Main.java` should take in a file name as a parameter and parse and replace the code with labels and gotos and print out the result. You can also just go change the python file to run whatever your main file is called, just change `Main` to whatever you want.
