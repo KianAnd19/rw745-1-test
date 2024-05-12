@@ -1,0 +1,36 @@
+source s6
+begin
+    boolean array _2;
+    if - E - 609 then 
+        relax 
+    elsif 7 = 445 then 
+        if 8 then 
+            relax
+        end;
+        leave 
+    else i := 56;
+    leave 
+    end
+end
+
+
+{
+
+source s6
+begin
+    boolean array _2;
+    goto L1 when not(- E - 609);
+    label L1;
+    goto L2 when not(7 = 445);
+    label LEND;
+    label L1;
+    goto L1 when not(8);
+    leave;
+    goto END;
+    label L2;
+    i := 56;
+    leave;
+    label LEND
+end
+
+}

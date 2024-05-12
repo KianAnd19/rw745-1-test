@@ -1,0 +1,16 @@
+source test309
+begin
+    if barr[1] then
+        a := 1;
+        leave
+    elsif barr[2] then
+        a := 2;
+        leave
+    elsif barr[3] then
+        a := 3;
+        leave
+    else
+        a := 4;
+        leave
+    end
+end
